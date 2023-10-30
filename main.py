@@ -1,4 +1,10 @@
 import streamlit as st
-import fdb
 
-st.title("Sistema de Gestão de Pedidos")
+
+
+st.title("Sistema de Gestão de Pedido")
+
+st.sidebar.markdown("## Menu")
+
+vSelectCadastros = st.sidebar.selectbox("Cadastros",["Cadastro da Empresa","Cadastro de Clientes","Cadastro de produtos"])
+vSelectOperacionais = st.sidebar.selectbox("Operacional",["Emissão de Orçamentos"])
